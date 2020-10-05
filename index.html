@@ -15,6 +15,10 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="./css/lightbox.min.css" />
   </head>
   <body>
     <!-- Header -->
@@ -126,7 +130,7 @@
     ></script>
     <!-- Our Services -->
     <section id="service">
-      <h1 class="service__title">our services</h1>
+      <h1 class="service__title wow slideInLeft">our services</h1>
       <div class="service__content">
         <div class="service__item">
           <i class="fas fa-adjust"></i>
@@ -166,13 +170,135 @@
         </div>
       </div>
     </section>
-    <!-- Scripts -->
+    <!-- Gallery -->
+    <section id="gallery">
+      <h1>Our Gallery</h1>
+      <div class="gallery__content">
+        <div class="gallery__item gallery__1">
+          <a
+            href="./images/g1.jpg"
+            data-lightbox="image"
+            data-title="My caption"
+          >
+            <img src="./images/g1.jpg" alt="" />
+            <div class="gallery__text">
+              <h3>Our Gallery</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery__item">
+          <a
+            href="./images/g2.jpg"
+            data-lightbox="image"
+            data-title="My caption"
+          >
+            <img src="./images/g2.jpg" alt="" />
+            <div class="gallery__text">
+              <h3>Our Gallery</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery__item">
+          <a
+            href="./images/g3.jpg"
+            data-lightbox="image"
+            data-title="My caption"
+          >
+            <img src="./images/g3.jpg" alt="" />
+            <div class="gallery__text">
+              <h3>Our Gallery</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery__item">
+          <a
+            href="./images/g4.jpg"
+            data-lightbox="image"
+            data-title="My caption"
+          >
+            <img src="./images/g4.jpg" alt="" />
+            <div class="gallery__text">
+              <h3>Our Gallery</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery__item">
+          <a
+            href="./images/g5.jpg"
+            data-lightbox="image"
+            data-title="My caption"
+          >
+            <img src="./images/g5.jpg" alt="" />
+            <div class="gallery__text">
+              <h3>Our Gallery</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </a>
+        </div>
+        <div class="gallery__item gallery__6">
+          <a
+            href="./images/g6.jpg"
+            data-lightbox="image"
+            data-title="My caption"
+          >
+            <img src="./images/g6.jpg" alt="" />
+            <div class="gallery__text">
+              <h3>Our Gallery</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Bake team -->
+    <section id="bake__team">
+      <h1>Bake Team</h1>
+      <div class="bake__team__content">
+        <div class="bake__team__item">
+          <img src="./images/t1.jpg" alt="" />
+          <div class="item__content">
+            <h3>John Simon</h3>
+            <p>- Cake Maker</p>
+          </div>
+          <!-- Overlay -->
+        </div>
+        <div class="bake__team__item">
+          <img src="./images/t2.jpg" alt="" />
+          <div class="item__content">
+            <h3>John Simon</h3>
+            <p>- Cake Maker</p>
+          </div>
+          <!-- Overlay -->
+        </div>
+        <div class="bake__team__item">
+          <img src="./images/t3.jpg" alt="" />
+          <div class="item__content">
+            <h3>John Simon</h3>
+            <p>- Cake Maker</p>
+          </div>
+          <!-- Overlay -->
+        </div>
+      </div>
+    </section>
+    <!-- JQuery Scripts -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
       integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
       crossorigin="anonymous"
     ></script>
+    <!-- CountUp js -->
     <script src="./js/jquery.countup.min.js"></script>
+    <!-- Animation Wowjs -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- Lightbox js -->
+    <script src="./js/lightbox.min.js"></script>
     <script>
       $(".counter").countUp();
     </script>
