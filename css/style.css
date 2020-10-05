@@ -1,0 +1,165 @@
+* {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* Header */
+header {
+  display: flex;
+  height: 10rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #4e2a84;
+}
+
+header .header__logo {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+header .header__nav ul {
+  list-style: none;
+}
+
+header .header__nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header .header__nav ul li.active a {
+  color: #fd1083;
+}
+
+header .header__nav ul li:hover a {
+  color: #fd1083;
+}
+
+header .header__nav ul li a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+/* Carousel */
+#carousel {
+  background: url("../images/b3.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#carousel .carousel__content {
+  color: white;
+  text-align: center;
+}
+#carousel .carousel__content h1 {
+  font-size: 7rem;
+  text-transform: capitalize;
+}
+#carousel .carousel__content p {
+  font-size: 2rem;
+}
+#carousel .carousel__content button {
+  font-size: 2rem;
+  background-color: #fd1083;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 7.5px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+#carousel .carousel__content button:hover {
+  background-color: white;
+  color: initial;
+  border-color: #fd1083;
+  cursor: pointer;
+}
+/* Intro */
+#intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#intro .intro__item {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#intro .intro__item h3 {
+  font-size: 3rem;
+}
+#intro .intro__item p {
+  font-size: 1.6rem;
+  color: silver;
+}
+#intro .intro__tradition {
+  background-color: #4e2a84;
+}
+#intro img {
+  width: 100%;
+}
+#intro .intro__img1 {
+  grid-column: 2 / span 2;
+}
+#intro .intro__creativity {
+  background-color: #fd1083;
+}
+#intro .intro__things {
+  grid-column: 1 / span 2;
+  background-color: #ed6498;
+}
+#intro .intro__quality {
+  background-color: #836eaa;
+}
+#intro .intro__cakes {
+  background-color: #4e2a84;
+}
+#intro .intro__img4 {
+  grid-column: 3 / span 2;
+}
+/* Count */
+#count {
+  display: flex;
+  justify-content: space-around;
+  margin: 7rem 0;
+  text-align: center;
+}
+#count p {
+  color: #4e2a84;
+  font-size: 3rem;
+}
+#count h3 {
+  font-size: 2rem;
+}
+/* Our Services */
+#service h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+#service .service__content {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+#service .service__content .service__item i {
+  font-size: 3rem;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #4e2a84;
+  border: 1px solid currentColor;
+  /* padding: 1rem; */
+  text-align: center;
+  border-radius: 50%;
+}
